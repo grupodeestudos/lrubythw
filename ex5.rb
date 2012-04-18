@@ -6,9 +6,12 @@ my_eyes = 'Blue'
 my_teeth = 'White'
 my_hair = 'Brown'
 
+my_height_cm = my_height * 2.54
+my_weight_kg = my_weight * 0.45
+
 puts "Let's talk about %s" % my_name
-puts "He's %d inches tall." % my_height
-puts "He's %d pounds heavy." % my_weight
+puts "He's %d inches (%f cm) tall." % [my_height, my_height_cm]
+puts "He's %d pounds (%f kg) heavy." % [my_weight, my_weight_kg]
 puts "Actually that's not too heavy."
 puts "He's got %s eyes and %s hair." % [my_eyes, my_hair]
 puts "His teeth are usually %s depending on the coffe." % my_teeth
